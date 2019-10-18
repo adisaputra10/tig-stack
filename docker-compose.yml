@@ -1,8 +1,6 @@
 
 telegraf:
     image: matisq/telegraf:latest
-    links:
-        - influxdb:influxdb
     environment:
         HOST_NAME: "telegraf"
         INFLUXDB_HOST: "influxdb"
